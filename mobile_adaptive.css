@@ -361,6 +361,77 @@
 
 
 
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  }
+  
+  /* Адаптив для різних брейкпоінтів */
+  
+  /* Для екранів до 1440px */
+  @media (max-width: 1440px) {
+    .clients-logos {
+      padding: 0 40px;
+    }
+    .logog {
+      flex: 1 1 20%;
+    }
+  }
+  
+  /* Для екранів до 992px */
+  @media (max-width: 992px) {
+    .clients-logos {
+      padding: 0 20px;
+    }
+    .logog {
+      flex: 1 1 30%; /* Зменшуємо кількість логотипів в рядку */
+    }
+  }
+  
+  /* Для екранів до 768px */
+  @media (max-width: 768px) {
+    .clients-logos {
+      padding: 0 10px;
+    }
+    .logog {
+      flex: 1 1 45%; /* Більше логотипів на рядок */
+    }
+  }
+  
+  /* Для екранів до 540px */
+  @media (max-width: 540px) {
+    .clients-logos {
+      padding: 0 10px;
+    }
+    .logog {
+      flex: 1 1 100%; /* Один логотип в рядку */
+    }
+  }
+  
+  /* Для екранів до 320px */
+  @media (max-width: 320px) {
+    .clients-logos {
+      padding: 0 5px;
+    }
+    .logog {
+      flex: 1 1 100%; /* Один логотип в рядку */
+    }
+  }
+
+
+
+
+
 
 
 
